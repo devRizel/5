@@ -127,29 +127,27 @@
         <div data-role="content" class="animated-heading">
             <input id="searchInput" list="searchOptions" placeholder="Search..." />
             <datalist id="searchOptions">
-                <option value="Top Seller ">
-              <option value="Food">
-              <option value="Burger">
-              <option value="Spaghetti">
-            </datalist>
-            <script>
-              const input = document.getElementById('searchInput');
-              input.addEventListener('change', () => {
-                const value = input.value;
-                const links = {
-                    "Top Seller ": "bestsell.html",
-                  "Food": "food.html",
-                  "Burger": "burger.html",
-                   "Spaghetti": "spaghetti.html"
-                };
-                if (links[value]) {
-                  window.location.href = links[value];
-                }
-              });
-            </script>
+                <option value="Milk Tea">
+                <option value="Shake">
+                <option value="Other">
+              </datalist>
+              <script>
+                const input = document.getElementById('searchInput');
+                input.addEventListener('change', () => {
+                  const value = input.value;
+                  const links = {
+                      "Milk Tea": "milktea2.html",
+                    "Shake": "shake2.html",
+                    "Other": "other2.html"
+                  };
+                  if (links[value]) {
+                    window.location.href = links[value];
+                  }
+                });
+              </script>
         <br>
             <div id="extraContent">
-                <p style="font-size: 30px; text-align: center;">Mi Cusina
+                <p style="font-size: 30px; text-align: center;">Cup of Crowns
 
                 </p>
             </div>
